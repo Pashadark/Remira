@@ -1,6 +1,6 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %} Tables {% endblock title %}
+{% block title %} Обращения {% endblock title %}
 
 {% block content %}
 
@@ -9,18 +9,18 @@
       <div class="header-body">
         <div class="row align-items-center py-4">
           <div class="col-lg-6 col-7">
-            <h6 class="h2 text-white d-inline-block mb-0">Tables</h6>
+            <h6 class="h2 text-white d-inline-block mb-0">Обращения</h6>
             <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
               <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                 <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tables</li>
+                <li class="breadcrumb-item"><a href="#">Таблица</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Срочные</li>
               </ol>
             </nav>
           </div>
           <div class="col-lg-6 col-5 text-right">
-            <a href="#" class="btn btn-sm btn-neutral">New</a>
-            <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+            <a href="#" class="btn btn-sm btn-neutral">Новые</a>
+            <a href="#" class="btn btn-sm btn-neutral">Фильтры</a>
           </div>
         </div>
       </div>
@@ -41,11 +41,11 @@
             <table class="table align-items-center table-flush">
               <thead class="thead-light">
                 <tr>
-                  <th scope="col" class="sort" data-sort="name">Project</th>
-                  <th scope="col" class="sort" data-sort="budget">Budget</th>
-                  <th scope="col" class="sort" data-sort="status">Status</th>
-                  <th scope="col">Users</th>
-                  <th scope="col" class="sort" data-sort="completion">Completion</th>
+                  <th scope="col" class="sort" data-sort="name">Обращение</th>
+                  <th scope="col" class="sort" data-sort="budget">Адрес</th>
+                  <th scope="col" class="sort" data-sort="status">Статус</th>
+                  <th scope="col">Исполнитель</th>
+                  <th scope="col" class="sort" data-sort="completion">Прогресс</th>
                   <th scope="col"></th>
                 </tr>
               </thead>

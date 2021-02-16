@@ -1,6 +1,6 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %} Profile {% endblock title %}
+{% block title %} Профиль {% endblock title %}
 
 {% block content %}
 
@@ -13,10 +13,10 @@
     <div class="row">
       <div class="col-lg-7 col-md-10">
         <h1 class="display-2 text-white"> 
-          Hello {{ request.user.username }}
+              Привет {{ request.user.username }}
         </h1>
-        <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
-        <a href="#!" class="btn btn-neutral">Edit profile</a>
+        <p class="text-white mt-0 mb-5">Это страница вашего профиля. Вы можете видеть прогресс, достигнутый в вашей работе, и управлять своими проектами или назначенными задачами</p>
+        <a href="#!" class="btn btn-neutral">Редактировать профиль</a>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
           <div class="d-flex justify-content-between">
             <a href="#" class="btn btn-sm btn-info  mr-4 ">Connect</a>
-            <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+            <a href="#" class="btn btn-sm btn-default float-right">Написать</a>
           </div>
         </div>
         <div class="card-body pt-0">
@@ -48,7 +48,7 @@
               <div class="card-profile-stats d-flex justify-content-center">
                 <div>
                   <span class="heading">22</span>
-                  <span class="description">Friends</span>
+                  <span class="description">Выполнено</span>
                 </div>
                 <div>
                   <span class="heading">10</span>
@@ -66,6 +66,9 @@
               {{ request.user.username }}
             </h5>
             <div class="h5 font-weight-300">
+              {{ request.user.last_login }}
+            </div>
+              <div class="h5 font-weight-300">
               {{ request.user.email }}
             </div>
             <div class="h5 mt-4">
@@ -83,7 +86,7 @@
         <div class="card-header">
           <div class="row align-items-center">
             <div class="col-8">
-              <h3 class="mb-0">Edit profile </h3>
+              <h3 class="mb-0">Редактирование профиля</h3>
             </div>
             <div class="col-4 text-right">
               <a href="#!" class="btn btn-sm btn-primary">Settings</a>
@@ -158,7 +161,7 @@
             </div>
             <hr class="my-4" />
             <!-- Description -->
-            <h6 class="heading-small text-muted mb-4">About me</h6>
+            <h6 class="heading-small text-muted mb-4">Обо мне</h6>
             <div class="pl-lg-4">
               <div class="form-group">
                 <label class="form-control-label">About Me</label>

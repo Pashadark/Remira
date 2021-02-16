@@ -218,14 +218,14 @@ a
 {
     text-decoration: none;
 
-    color: #5e72e4;
+    color: #ffd600;
     background-color: transparent;
 }
 a:hover
 {
     text-decoration: none; 
 
-    color: #233dd2;
+    color: #fb6340;
 }
 
 a:not([href])
@@ -6537,7 +6537,7 @@ input[type='button'].btn-block
     list-style: none;
 
     border-radius: .375rem; 
-    background-color: #e9ecef;
+    background-color: #21262d;
 
     flex-wrap: wrap;
 }
@@ -8769,7 +8769,7 @@ a.close.disabled
 
 .bg-primary
 {
-    background-color: #5e72e4 !important;
+    background: linear-gradient(87deg, #ffd600 0, #fb6340 100%) !important;
 }
 
 a.bg-primary:hover,
@@ -8873,7 +8873,7 @@ button.bg-dark:focus
 
 .bg-default
 {
-    background-color: #172b4d !important;
+    background-color: #212529 !important;
 }
 
 a.bg-default:hover,
@@ -24193,7 +24193,7 @@ button.bg-lighter:focus
 
 .bg-gradient-default
 {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+    background: linear-gradient(87deg, #000000d9 0, #42162682 100%) !important
 }
 
 .bg-gradient-white
@@ -24509,7 +24509,7 @@ button.section-darker:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
+    background: linear-gradient(87deg, #ffd600 0, #fb6340 100%) !important;
 }
 
 .bg-gradient-secondary
@@ -24549,7 +24549,7 @@ button.section-darker:focus
 
 .bg-gradient-default
 {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+    background: linear-gradient(87deg, #000000d9 0, #42162682 100%) !important
 }
 
 .bg-gradient-white
