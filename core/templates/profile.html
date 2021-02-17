@@ -1,9 +1,10 @@
 {% extends 'layouts/base.html' %}
 
+
 {% block title %} Профиль {% endblock title %}
 
 {% block content %}
-
+{% load avatar_tags %}
 <div class="header pb-6 d-flex align-items-center" 
      style="min-height: 500px; background-image: url(/static/assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
   <!-- Mask -->
@@ -31,14 +32,14 @@
           <div class="col-lg-3 order-lg-2">
             <div class="card-profile-image">
               <a href="#">
-                <img src="/static/assets/img/theme/team-4.jpg" class="rounded-circle">
+                {% avatar user 135 class="img-circle img-responsive" id="user_avatar" %}
               </a>
             </div>
           </div>
         </div>
         <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
           <div class="d-flex justify-content-between">
-            <a href="#" class="btn btn-sm btn-info  mr-4 ">Connect</a>
+            <a href="{% url 'avatar_change' %}" class="btn btn-sm btn-info  mr-4 ">Аватар</a>
             <a href="#" class="btn btn-sm btn-default float-right">Написать</a>
           </div>
         </div>
@@ -106,6 +107,9 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
+                      {% if user.is_online %}
+    <div class="online"></div>
+{% endif %}
                     <label class="form-control-label" for="input-email">Email address</label>
                     <input type="email" id="input-email" class="form-control" placeholder="{{ request.user.email }}">
                   </div>

@@ -2,8 +2,8 @@
 """
 Copyright (c) 2019 - present AppSeed.us
 """
-
-from django.urls import path, re_path
+from django.conf.urls import url
+from django.urls import path, re_path, include
 from app import views
 
 urlpatterns = [
@@ -13,5 +13,8 @@ urlpatterns = [
 
     # Matches any html file
     re_path(r'^.*\.*', views.pages, name='pages'),
+
+    # Аватар профиля
+    url('avatar/', include('avatar.urls'))
 
 ]
